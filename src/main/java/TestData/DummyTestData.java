@@ -99,4 +99,13 @@ public class DummyTestData {
 
         return messageJSONObject;
     }
+    public Map<String, Object> setUpExpectedDeleteDataByUsingMap(){
+
+        Map<String, Object> expectedDataMap = new HashMap<String, Object>();
+        expectedDataMap.put("statuscode", 200);
+        expectedDataMap.put("status", "success");
+        expectedDataMap.put("data", "2");
+        expectedDataMap.put("message", "Successfully! Record has been deleted");
+        return expectedDataMap;
+    }
 }
